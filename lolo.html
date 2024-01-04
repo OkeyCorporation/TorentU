@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TorentU</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Intro:wght@300&display=swap');
+
+        body {
+            font-family: 'Intro', sans-serif;
+            background-color: #c8ffcb;
+            color: rgb(1, 61, 4);
+            text-align: center;
+        }
+
+        h1 {
+            background-color: #55c957;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .item {
+            margin-bottom: 10px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .rectangle {
+            /* Расположение по x и y */
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, 30%);
+
+            /* Скругления */
+            border-radius: 10px;
+
+            /* Цвет */
+            background-color: #202020;
+
+            /* Размер по x и y */
+            width: 500px;
+            height: 325px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .season-button {
+            background-color: #30303046;
+            color: white;
+            padding: 0px 0px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 0px;
+        }
+
+        #rickroll-gif {
+            display: none;
+            width: 70%;
+            height: auto;
+            margin-top: 20px;
+            position: absolute;
+            top: -20%;
+            left: 50%;
+            transform: translate(-50%, 30%);
+        }
+
+        .bbutton {
+            background-color: #35353556;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Лололошка все сезоны</h1>
+    <div class="content">
+        <a href="index.html" class="button">назад</a>
+    </div>
+    <div class="rectangle" id="rectangle">
+        <br><br><br><br><br>
+        <button id="watch-button" class="bbutton" onclick="showGif()">Смотреть</button>
+        <button class="season-button" onclick="selectSeason(1)">Сезон 1</button>
+        <button class="season-button" onclick="selectSeason(2)">Сезон 2</button>
+        <button class="season-button" onclick="selectSeason(3)">Сезон 3</button>
+        <button class="season-button" onclick="selectSeason(4)">Сезон 4</button>
+        <button class="season-button" onclick="selectSeason(5)">ВСЕ СЕЗОНЫ</button>
+        <img id="rickroll-gif" src="rickroll.gif" alt="Rickroll">
+    </div>
+
+    <script>
+        function showGif() {
+            // Показываем gif
+            document.getElementById('rickroll-gif').style.display = 'block';
+
+            // Скрываем остальные элементы
+            document.getElementById('watch-button').style.display = 'none';
+            document.querySelectorAll('.season-button').forEach(function(button) {
+                button.style.display = 'none';
+            });
+        }
+
+        function selectSeason(seasonNumber) {
+            // Добавьте логику выбора сезона здесь
+            // Например, измените источник видео в зависимости от выбранного сезона
+            console.log('Выбран сезон ' + seasonNumber);
+        }
+    </script>
+</body>
+</html>
